@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.example</groupId>
+    <artifactId>spring-car</artifactId>
+    <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <spring.version>5.3.23</spring.version>
+    </properties>
+    <version>1.0-SNAPSHOT</version>
+    <name>spring-car Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+<!--            Содержит в себе атрибуты, все что связанно с фреймворком, библиотеки-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+<!--            Контекст используется для хранения всех бинов внутри и для подключения спринга в мейне-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+<!--            Бины это созданные с помощью спринг кор классы, которые в свою очередь помещаюдся в спринг контекст -->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>spring-car</finalName>
+    </build>
+</project>
