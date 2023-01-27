@@ -1,6 +1,7 @@
 package com.example.spring;
 
 import com.example.spring.models.Car;
+import java.lang.Class;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
